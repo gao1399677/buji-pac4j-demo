@@ -7,8 +7,8 @@ import javax.servlet.ServletResponse;
 import java.io.IOException;
 
 /**
- * <p>Title: MyPermissionsAuthorizationFilter </p>
- * <p>Description: MyPermissionsAuthorizationFilter </p>
+ * <p>Title: CustomPermissionsAuthorizationFilter </p>
+ * <p>Description: CustomPermissionsAuthorizationFilter </p>
  * Date: 2018年02月09日 下午11:03 AM
  *
  * @author gaosheng@hiynn.com
@@ -20,7 +20,7 @@ import java.io.IOException;
  * <p>
  * ==========================================================
  */
-public class MyPermissionsAuthorizationFilter extends PermissionsAuthorizationFilter {
+public class CustomPermissionsAuthorizationFilter extends PermissionsAuthorizationFilter {
 
     @Override
     public boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) throws IOException {

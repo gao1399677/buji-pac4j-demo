@@ -20,7 +20,7 @@ import java.io.IOException;
  * <p>
  * ==========================================================
  */
-public class MyRolesAuthorizationFilter extends RolesAuthorizationFilter {
+public class CustomRolesAuthorizationFilter extends RolesAuthorizationFilter {
 
     @Override
     public boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) throws IOException {

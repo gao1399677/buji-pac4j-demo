@@ -6,11 +6,15 @@ import org.pac4j.core.profile.CommonProfile;
 
 public class RoleAdminAuthGenerator implements AuthorizationGenerator<CommonProfile> {
 
+
+
     @Override
     public CommonProfile generate(final WebContext context, final CommonProfile profile) {
-        profile.addRole("ROLE_ADMIN");
+        profile.addPermission("admin:add");
         profile.clearSensitiveData(); // remove the access token to reduce size and make the remember-me work
         profile.setRemembered(true);
         return profile;
     }
+
+
 }
